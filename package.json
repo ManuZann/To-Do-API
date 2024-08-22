@@ -1,0 +1,30 @@
+{
+  "name": "todo-api",
+  "version": "0.0.1",
+  "description": "To Do List API",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/server.ts",
+    "start": "node dist/server.js",
+    "build": "rimraf ./dist && tsc"
+  },
+  "author": "ManuZan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^22.4.1",
+    "prisma": "^5.18.0",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "typescript": "^5.5.4"
+  }
+}
